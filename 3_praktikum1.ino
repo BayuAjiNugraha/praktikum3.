@@ -5,7 +5,7 @@ void setup() {
 lcd.begin(16,2);
 lcd.clear();
 lcd.setCursor(0,0);
-lcd.print("ADC Example on A0");
+lcd.print("ADC pada pin A0");
 analogReference(INTERNAL);
 }
 
@@ -14,5 +14,5 @@ unsigned int dataADC = analogRead(A0);
 lcd.setCursor(0,1);
 lcd.print("Value = ");
 lcd.print(dataADC);
-delay(500);
+delay(1000);
 }
